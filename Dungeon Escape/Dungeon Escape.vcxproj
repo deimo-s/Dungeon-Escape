@@ -139,6 +139,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Src\Collision.cpp" />
     <ClCompile Include="Src\Controller.cpp" />
     <ClCompile Include="Src\Enemy.cpp" />
     <ClCompile Include="Src\Game.cpp" />
@@ -148,6 +149,7 @@
     <ClCompile Include="Src\World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Includes\Collision.h" />
     <ClInclude Include="Includes\Controller.h" />
     <ClInclude Include="Includes\Enemy.h" />
     <ClInclude Include="Includes\Game.h" />

@@ -7,6 +7,7 @@ int main()
 {
     Player playerClass;
     Controller playerController;
+    Collision collisionClass;
 
 
     sf::RenderWindow window(sf::VideoMode({ 800, 600 }), "Dungeon Escape");
@@ -21,6 +22,7 @@ int main()
 
         playerController.deltaTime = playerController.clock.restart().asSeconds();
         playerController.Move(playerClass);
+        collisionClass.CollisionDetection(playerClass);
         window.clear(sf::Color::Black);
         playerClass.Draw(window);
         window.display();

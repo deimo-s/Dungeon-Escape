@@ -4,11 +4,9 @@
 
 Player::Player()
 {
-	std::cout << "Player called\n";
 	player.setSize(sf::Vector2f(50, 50));
 	player.setFillColor(sf::Color::Red);
-	Player::speed = 100.f;
-	
+	Player::speed = 100.f;	
 }
 
 void Player::Draw(sf::RenderWindow& window)
