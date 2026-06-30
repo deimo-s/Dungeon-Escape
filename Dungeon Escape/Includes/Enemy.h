@@ -1,12 +1,4 @@
 #pragma once
-/*
-enum class EnemyType
-{
-	Enemy1,
-	Enemy2,
-	Enemy3
-};
-*/
 class Enemy
 {
 public:

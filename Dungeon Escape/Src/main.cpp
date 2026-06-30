@@ -1,4 +1,3 @@
-#include <SFML/Graphics.hpp>
 #include "..//Includes/includes.h"
 
 using namespace std;
@@ -8,6 +7,7 @@ int main()
     Player playerClass;
     Controller playerController;
     Collision collisionClass;
+    World worldClass;
 
 
     sf::RenderWindow window(sf::VideoMode({ 800, 600 }), "Dungeon Escape");
@@ -22,9 +22,11 @@ int main()
 
         playerController.deltaTime = playerController.clock.restart().asSeconds();
         playerController.Move(playerClass);
-        collisionClass.CollisionDetection(playerClass);
+        worldClass.Camera(window, playerClass);
         window.clear(sf::Color::Black);
-        playerClass.Draw(window);
+        playerClass.DrawHp(window);
+        playerClass.DrawPlayer(window);
+
         window.display();
     }
 

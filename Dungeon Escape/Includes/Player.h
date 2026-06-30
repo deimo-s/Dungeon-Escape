@@ -6,11 +6,22 @@ public:
 	sf::RectangleShape player;
 	Player();
 	float speed;
-	float damage;
-	float hp;
+	int damage;
+	int hp;
 	float position;
 
-	void Draw(sf::RenderWindow& window);
+	void DrawPlayer(sf::RenderWindow& window);
+	void DrawHp(sf::RenderWindow& window);
+	void TakeDamage();
+	int getHp()
+	{
+		return hp;
+	}
 
+	sf::Vector2f getPosition()
+	{
+		sf::Vector2f Playerpos = player.getPosition();
+		return Playerpos;
+	}
 };
 

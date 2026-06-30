@@ -1,9 +1,10 @@
 #pragma once
+class Player;
 class World
 {
 public:
 	World();
-	void camera();
+	void Camera(sf::RenderWindow& window, Player& player);
 	void keyPos();
 	void potionPos();
 };

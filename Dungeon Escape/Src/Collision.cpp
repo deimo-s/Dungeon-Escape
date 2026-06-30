@@ -7,23 +7,16 @@ Collision::Collision()
 
 void Collision::CollisionDetection(Player& p)
 {
+	/*
 	sf::Vector2f playerPos = p.player.getPosition();
-	if (playerPos.x < 0)
-	{
-		p.player.setPosition(sf::Vector2f(0, playerPos.y));
-	}
-	if (playerPos.x > 750)
-	{
-		p.player.setPosition(sf::Vector2f(750, playerPos.y));
-	}
+	sf::Vector2f velocity(0.f, 0.f);
+	sf::Vector2f nextPos = playerPos + velocity;
 
-	if (playerPos.y < 0)
-	{
-		p.player.setPosition(sf::Vector2f(playerPos.x, 0));
-	}
+	if (nextPos.x < 0) nextPos.x = 0;
+	if (nextPos.x > 750) nextPos.x = 750;
 
-	if (playerPos.y > 550)
-	{
-		p.player.setPosition(sf::Vector2f(playerPos.x, 550));
-	}
+	if (nextPos.y < 0) nextPos.y = 0;
+	if (nextPos.y > 550) nextPos.y = 550;
+	p.player.setPosition(nextPos);
+	*/
 }
